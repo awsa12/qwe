@@ -120,9 +120,29 @@ body {
       margin: 5px 0 5px 0;
   }
 
+  .pdf {
+    border: none;
+    height: 150vh;
+    width: 100%;
+  }
+
+  #message * {
+    width: 50%;
+    margin: 10px;
+  }
+  #message textarea {
+    height: 50px;
+  }
+  #message button {
+    height: 2rem;
+
+  }
   @media (max-width: 1080px) {
       #logo {
           display: none;
+      }
+      .pdf {
+            height: 100vh;
       }
   }
 
@@ -134,4 +154,13 @@ body {
     .product img {
       max-width: 100%;
     }
+    .pdf {
+      height: 75vh;
+}
+  }
+
+  @media (max-width: 460px) {
+    .pdf {
+      height: 75vh;
+}
   }

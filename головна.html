@@ -96,8 +96,9 @@
       <h2>Календар знижок</h2>
       <p>Завантажити календар знижок:</p>
       <a href="ресурси/календар.pdf" download>PDF</a> |
-      <a href="ресурси/календар.indd" download>INDD</a>
-      <iframe src="ресурси/календар.pdf" width="100%" height="600px" style="border: none;">
+      <a href="ресурси/календар.indd" download>INDD</a> <br>
+
+      <iframe src="ресурси/календар.pdf#toolbar=0&#navpanes=0&#vies=Fit" class="pdf">
         Ваш браузер не підтримує перегляд PDF. <a href="ресурси/календар.pdf">Завантажити PDF</a>
       </iframe>
     </section>
@@ -115,7 +116,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Канцелярський сад. Всі права захищено.</p>
+    <h2>Написати відгук</h2>
+    <form action="mailto:17_23_yasinskyi@vmvpu.vn.ua" method="post" id="message">
+      <label for="name">Імя:</label><br><input type="text" name="name"><br>
+      <label>Повідомлення: </label><br><textarea type="text" name="message"></textarea><br>
+      <button type="submit" onclick="alert('Відгук відправленно')">Надіслати</button>
+    </form>
   </footer>
 </body>
 </html>
